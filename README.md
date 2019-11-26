@@ -16,11 +16,12 @@
 
 ### 使用方法
 
-1、使用npm 下载组件到项目中，引入即可使用
+1、使用npm 下载组件到项目中，引入即可使用（使用方法见2）
 
-> npm install -s @edu/app-custom-scroll
+> npm install -s @edu/app-custom-scroll 
 
-2、普通html中直接引入使用
+
+2、普通html中直接引入使用，组件使用方式与html方式基本一致
 
 ```html
 <!DOCTYPE html>
@@ -34,6 +35,7 @@
 <body>
   <div id="app">
     <custom-scroll style="width:800px;height:600px;"><!--需要设置宽高，也可在样式表里设置-->
+      <!--这里面就是内容了-->
       <div class="slot">
         <h2>琵琶行</h2>
         <p>浔阳江头夜送客，枫叶荻花秋瑟瑟。主人下马客在船，举酒欲饮无管弦。醉不成欢惨将别，别时茫茫江浸月。</p>
@@ -91,18 +93,24 @@
 
 ```css
 .scroll-container {
-    /* 容器区域样式 */
+    /* 容器区域样式 */    
     margin: auto;
     width: 800px;
     height: 600px;
     .scroll-wrapper {
       /* 内容区域样式 */
     }
-    .scroll-area{
-      /* 滚动条背景样式 */
+    .scroll-area {
+      /* 纵向滚动条背景样式 */
     }
     .scroll-bar {
-      /* 滚动条样式代码 */
+      /* 纵向滚动条样式 */
+    }
+    .scroll-area-x {
+      /* 横向滚动条背景样式 */
+    }
+    .scroll-bar-x {
+      /* 横向滚动条样式 */
     }
   }
 ```

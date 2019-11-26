@@ -1,7 +1,7 @@
 {
   "name": "@edu/app-custom-scroll",
   "description": "A vue component for web developers",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "kiviko",
   "license": "MIT",
   "private": false,
